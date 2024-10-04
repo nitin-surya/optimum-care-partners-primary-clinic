@@ -1,0 +1,118 @@
+body {
+  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.dashboard {
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 100px; /* Logo size */
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #1c7395;
+  font-size: 32px; /* Larger title font */
+}
+
+h2 {
+  color: #2853cd;
+  margin: 20px 0 10px;
+  font-size: 26px; /* Slightly larger subheading font */
+}
+
+.react-select {
+  width: 300px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px; /* Space between label and dropdown */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Allows for wrapping on smaller screens */
+  gap: 20px; /* Space between columns */
+}
+
+.column {
+  flex: 1; /* Allows columns to grow */
+  min-width: 300px; /* Ensures columns have a minimum width */
+  max-width: 100%; /* Limits column width for side-by-side display */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding and border in total width */
+}
+
+.table-container {
+  margin-bottom: 40px;
+  border: 1px solid #ddd; /* Add border for better visibility */
+  border-radius: 5px;
+  overflow: auto;
+  width: 100%; /* Ensure it takes full width of the column */
+}
+
+table {
+  width: 100%; /* Ensure the table takes the full width of the container */
+  border-collapse: collapse;
+  min-height: 275px; /* Minimum height for tables */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #ba4f8f;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  h2 {
+    font-size: 22px; /* Adjust subheading size */
+  }
+
+  th, td {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .logo {
+    width: 80px; /* Adjust logo size for smaller screens */
+  }
+}

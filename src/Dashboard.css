@@ -46,6 +46,7 @@ h2 {
 label {
   font-weight: bold;
   margin-right: 10px; /* Space between label and dropdown */
+  border-radius: 50px;
 }
 
 .content {
